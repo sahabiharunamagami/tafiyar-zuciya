@@ -31,3 +31,75 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tafiyar Zuciya</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0d2340;
+color:white;
+text-align:center;
+}
+.page{
+padding:25px;
+}
+button{
+background:#ffc107;
+border:none;
+padding:15px 30px;
+font-size:20px;
+border-radius:10px;
+cursor:pointer;
+margin-top:20px;
+}
+#book{
+display:none;
+text-align:left;
+max-width:700px;
+margin:auto;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="home" class="page">
+<h1>📖 TAFIYAR ZUCIYA</h1>
+<h3>By Sahabi Excerllency</h3>
+
+<p>Gidan Labaran Soyayya da Darussan Rayuwa</p>
+
+<button onclick="openBook()">Karanta Littafi</button>
+</div>
+
+<div id="book">
+<h2>Chapter 1</h2>
+
+<p>
+A kowace tafiya akwai farkonta...
+Wannan ita ce farkon labarin Tafiyar Zuciya.
+</p>
+
+<button onclick="goHome()">🏠 Home</button>
+</div>
+
+<script>
+function openBook(){
+document.getElementById("home").style.display="none";
+document.getElementById("book").style.display="block";
+}
+
+function goHome(){
+document.getElementById("home").style.display="block";
+document.getElementById("book").style.display="none";
+}
+</script>
+
+</body>
+</html>
