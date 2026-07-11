@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="ha">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tafiyar Zuciya</title>
-</head>
-<body style="margin:0;font-family:Arial;background:#0b1f3a;color:white;text-align:center;">
-
-  <div style="padding:40px;">
-    <h1>📖 TAFIYAR ZUCIYA</h1>
-
-    <h3>By Sahabi Excerllency</h3>
-
-    <p>Gidan Labaran Soyayya da Darussan Rayuwa</p>
-
-    <hr>
-
-    <h2>Maraba!</h2>
-
-    <p>
-      Wannan shi ne shafin farko na app ɗin
-      <strong>TAFIYAR ZUCIYA</strong>.
-    </p>
-
-    <button style="padding:15px 30px;font-size:18px;border:none;background:gold;border-radius:10px;">
-      Karanta Littafi
-    </button>
-<a href="chapter1.html">
-  <button style="padding:15px 30px;font-size:18px;border:none;background:gold;border-radius:10px;cursor:pointer;">
-    Karanta Littafi
-  </button>
-</a>
-  </div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ha">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tafiyar Zuciya</title>
+
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial;
-background:#0d2340;
-color:white;
-text-align:center;
+    font-family:Arial, sans-serif;
+    background:#0b1f3a;
+    color:white;
 }
-.page{
-padding:25px;
+
+header{
+    background:#102c57;
+    padding:20px;
+    text-align:center;
 }
+
+header h1{
+    color:gold;
+}
+
+header p{
+    margin-top:8px;
+    color:#ddd;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+}
+
+.card{
+    background:#173b6d;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
 button{
-background:#ffc107;
-border:none;
-padding:15px 30px;
-font-size:20px;
-border-radius:10px;
-cursor:pointer;
-margin-top:20px;
+    background:gold;
+    color:black;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
 }
-#book{
-display:none;
-text-align:left;
-max-width:700px;
-margin:auto;
-padding:20px;
+
+button:hover{
+    background:#ffd700;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    padding:20px;
+    color:#bbb;
 }
 </style>
+
 </head>
 
 <body>
 
-<div id="home" class="page">
+<header>
 <h1>📖 TAFIYAR ZUCIYA</h1>
-<h3>By Sahabi Excerllency</h3>
+<p>By Sahabi Excerllency</p>
+</header>
 
-<p>Gidan Labaran Soyayya da Darussan Rayuwa</p>
+<div class="container">
 
-<button onclick="openBook()">Karanta Littafi</button>
-</div>
+<div class="card">
 
-<div id="book">
-<h2>Chapter 1</h2>
+<h2>Maraba!</h2>
 
 <p>
-A kowace tafiya akwai farkonta...
-Wannan ita ce farkon labarin Tafiyar Zuciya.
+Barka da zuwa <b>TAFIYAR ZUCIYA</b>.
+Wannan manhaja ce domin karanta littattafan soyayya da darussan rayuwa.
 </p>
 
-<script>
-function openBook(){
-document.getElementById("home").style.display="none";
-document.getElementById("book").style.display="block";
-}
+<a href="chapter1.html">
+<button>📖 Karanta Littafi</button>
+</a>
 
-function goHome(){
-document.getElementById("home").style.display="block";
-document.getElementById("book").style.display="none";
-}
-</script>
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Tafiyar Zuciya<br>
+
+By Sahabi Excerllency
+
+</footer>
 
 </body>
 </html>
