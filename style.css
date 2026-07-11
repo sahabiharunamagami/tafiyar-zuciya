@@ -4,7 +4,14 @@
   box-sizing:border-box;
 }
 
+
 body{
+    background:#081b33;
+    color:white;
+    font-family:Arial,sans-serif;
+    font-size:22px;
+    line-height:1.9;
+
   font-family:Arial, sans-serif;
   background:#081b33;
   color:white;
